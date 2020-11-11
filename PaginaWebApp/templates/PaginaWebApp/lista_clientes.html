@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <div class="page-header">
+        <h1><a href="/">Pía Luna</a></h1>
+    </div>
+<link rel="stylesheet" href="{% static 'css/PaginaWebApp.css' %}">
+</head>
+<body>
+        <h2><a href="/">Lista de Personas Registradas</a></h2>
+        <ol>
+        {% for persona in lista %}
+                <h3><li> {{ persona }} </li></h3>
+        {% endfor%}
+        </ol>  
+        <h3> Has visitado esta página {{ num_visitas }} veces </h3>      
+</body>
+</html>
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
